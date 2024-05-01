@@ -1,34 +1,41 @@
 body {
-    background: linear-gradient(to bottom, lightpurple, white);
+    background : linear-gradient(to right, violet, pink);
+    overflow-x: hidden;
 }
 .floating-nav-inner{
-    width: 75vw;
-    padding-top: 38px;
-    padding-bottom: 37px;
-    margin-left: 100px;
+    margin-top: -1vw;
+    height: 9vw;
+    width: 100vw;
+    margin-left: -1vw;
+    padding-right: 1vw;
+    align-items: center;
+    
+    justify-content: space-between;
+    padding-top: 4vw;
     background : linear-gradient(to right, violet, pink);
 }
 #Logo{
     background-color: rgb(192, 132, 216);
     border-radius: 145%;
-    height: 120px;
-    width: 120px;
+    height:10vw;
+    width: 10vw;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    font-size: 5vh;
+    font-size: 60%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 #Bubble1{
     float: left;
+    
     background-color: rgb(231, 207, 241);
     border-radius: 145%;
-    height: 140px;
-    width: 140px;
+    height: 13vw;
+    width: 13vw;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    font-size: 5vh;
+    font-size: 3vh;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -37,20 +44,85 @@ body {
     margin-right: 10px;
     background-color: rgb(231, 207, 241);
     border-radius: 145%;
-    height: 140px;
-    width: 140px;
+    height: 13vw;
+    width: 13vw;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    font-size: 5vh;
+    font-size: 3vh;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-#NavBar{
-
+#NavBar {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    
 }
+
+@media screen and (min-width: 1024px) {
+    #Logo{
+    
+        background-color: rgb(192, 132, 216);
+        border-radius: 145%;
+        height: 6.5vw;
+        width: 6.5vw;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 60%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+    }
+    #Bubble1{
+        float: left;
+        margin-top:1vw;
+        
+        background-color: rgb(231, 207, 241);
+        border-radius: 145%;
+        height: 9vw;
+        width: 9vw;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3vh;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+    #Bubble2{
+        float: right;
+        margin-top: 1vw;
+        margin-right: 10px;
+        background-color: rgb(231, 207, 241);
+        border-radius: 145%;
+        height: 9vw;
+        width: 9vw;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3vh;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .floating-nav-inner{
+        margin-top: -1vw;
+        height: 7vw;
+        
+        width: 100vw;
+        margin-left: -1vw;
+        padding-right: 1vw;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 4vw;
+        background : linear-gradient(to right, violet, pink);
+    }
+    li{
+        list-style: none;
+        display: inline-block;
+        margin-left: 5vw;
+    
+    
+    }
+}
+
 #NavBar ul{
     display: flex;
     justify-content: space-between;
@@ -58,16 +130,16 @@ body {
     
 
 }
+
 li{
     list-style: none;
     display: inline-block;
-    padding-left: 50px;
+    padding-left: 7.5vw;
 }
 li a{
     color: white;
-    font-size: 30px;
+    font-size: 2vh;
     font-weight: bold;
-    margin-right: 60px;    
 }
 /* width */
 ::-webkit-scrollbar {
@@ -85,3 +157,14 @@ li a{
     background: purple;
     border-radius: 10px;
   }
+.intro-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35vw;
+    height: 15vh;
+    width: 30vw;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgba(182, 67, 157, 0.384); 
+}
